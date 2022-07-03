@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title><%=title%></title>
+</head>
+<body>
+    <div class="opacity_back">
+        <div class="zakaz_window">
+            <div class="zakaz_blue_window">
+                <h1><%=res.MarkaName%> <%=res.NameModel%></h1>
+                <img src="../Sprites/<%=res.MarkaName%>.png" alt="">
+            </div>
+            <p><%=res.Probig%>км. - <%=res.Tippaluva%> - <%=res.TipKuzova%> - <%=res.ClassName%> - <%=res.YearVupysky%></p>
+            <p>Ціна за місяць - <span class="money_text"><%=res.CinaPerMounth%>$</span></p>
+            <p>Ціна викупу - <span class="money_text"><%=res.CinaVukypy%>$</span></p>
+            <p>Кількість платежів - <%=res.CinaVukypy/res.CinaPerMounth%> місяців</p>
+            <form class="formstyle" method="POST">
+
+                <input name = "user_name" type="text" placeholder="Ім'я" required maxlength="20">
+
+                <input name = "user_fam" type="text" placeholder="Прізвище" required maxlength="20">
+
+                <input name = "user_pobat" type="text" placeholder="По-батькові" required maxlength="15">
+
+                <input name ="phone_number" type="tel" maxlength="13" value="+380" required="required" pattern="^+?[\s-()0-9]{7,19}$">
+
+                <input name ="user_mail"  type="email" placeholder="Електронна пошта" required maxlength="30">
+
+                <input name = "user_kategory" type="text" placeholder="Категорія прав" required maxlength="3">
+
+                <input name = "user_nomertaseriapassporta" type="text" placeholder="Номер та серія паспорта" required maxlength="10">
+
+                <input name = "user_data" type="date" placeholder="Дата видачі" required>
+
+                <input name = "user_kimvidanii" type="text" placeholder="Ким виданий" required maxlength="3">
+
+                <input name = "user_addres" type = "text" placeholder="Адресса проживання" required maxlength="20">
+
+                <input name = "user_nomerprav" type="text" placeholder="Номер та серія прав" required maxlength="20">
+
+                <input name = "user_idef" type="text" placeholder="Ідентифікаційний код" required maxlength="20">
+                <div>
+                    <p>Дата початку дії договору</p>
+                    <%var date = new Date()%>
+                    <input name = "start_data" type="date" value="<%=date.toISOString().split('T')[0];%>" readonly>
+                </div>
+                <div>
+                    <p>Дата кінця дії договору</p>
+                    <%var new_date = date.setMonth(date.getMonth() + res.CinaVukypy/res.CinaPerMounth);%>
+                    <input name="end_data" type="date" value="<%=new Date(new_date).toISOString().split('T')[0];%>" readonly>
+                </div>
+                
+
+                <p><input class="last_inp" type="checkbox" name = "vukup">З можливістю викупу?</p>
+                <input class="buttonstyle" type="submit" value="Замовити">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

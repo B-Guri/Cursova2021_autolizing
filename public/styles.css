@@ -1,0 +1,428 @@
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Lexend Mega', sans-serif; */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    user-select: none;   
+}
+
+header{
+    background-color: #121212;
+    width: 100%;
+}
+
+.header_content{
+    width: 1400px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.logo{
+    font-family: 'Lexend Mega', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 60px;
+    color: #135ec5;
+}
+
+.header_contacts a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    transition: .1s;
+}
+
+.header_contacts a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_contacts{
+    display: flex;
+    align-items: center;
+}
+
+.header_contacts img{
+    margin-left: 55px;
+    margin-right: 11px;
+}
+
+.main_head{
+    width: 100%;
+    background-color: #121212;
+}
+
+.main_head_content{
+    width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 90px;
+}
+
+.mers_logo{
+    width: 793px;
+    margin: 0 auto;
+    padding-top: 135px;
+}
+
+.main_head_button{
+    margin-top: 26px;
+    width: 300px;
+    height: 55px;
+    background-color: #135ec5;
+    border-radius: 20px;
+    padding-top: 13px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.main_head_button > p{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.main_head_button:hover{
+    transform: scale(1.02);
+}
+
+.main_head_go p{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.main_head_go{
+    padding-top: 41px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.propose_head{
+    text-align: center;
+}
+
+h1{
+    font-size: 48px;
+    color: #135ec5;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.blue_line{
+    width: 100%;
+    height: 9px;
+    background-color: #135ec5;
+}
+
+.main_catalog{
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    justify-content: space-between;
+}
+
+.propose{
+    width: 320px;
+    height: 320px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: .1s;
+    margin-bottom: 15px;
+}
+
+.propose_main_header{
+    width: 320px;
+    height: 120px;
+    background-color: #135ec5;
+    padding-left: 20px;
+}
+
+.propose_car{
+    padding-top: 38px;
+}
+
+.propose_info{
+    text-align: center;
+    margin-top: 110px;
+}
+
+.propose_text{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.propose_second_text{
+    font-size: 18px;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.propose:hover{
+    transform: scale(1.05);
+}
+
+.main_about{
+    background-color: #135ec5;
+    text-align: center;
+}
+.main_about_zagolovok{
+    text-align: center;
+}
+
+.main_about_zagolovok h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: #fff;
+    padding-top: 15px;
+}
+
+.des_block{
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 39px;
+    padding-bottom: 50px;
+}
+
+.des_num{
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.number_des{
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 8px;
+}
+
+.des_current{
+    width: 350px;
+}
+
+.des_txt h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.des_txt p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.des_txt{
+    width: 276px;
+    margin: 0 auto;
+}
+
+.que_main{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.que_main h4{
+    font-size: 24px;
+    font-weight: bold;
+    color: #135ec5;
+    margin-top: 10px;
+}
+
+.que_main p{    
+    font-weight: bold;
+    font-size: 24px;
+    color: #000;
+    line-height: 29px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.foot_main{
+    width: 100%;
+    background-color: #135ec5;
+}
+
+.foot_content{
+    width: 700px;
+    height: 160px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_foot{
+    font-family: Lexend Mega;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 60px;
+
+    color: #FFFFFF;
+}
+
+.foot_content a{
+    text-decoration: none;
+    font-family: Lexend Mega;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #FFFFFF;
+    transition: .1s;
+}
+
+.foot_content a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.opacity_back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.zakaz_window{
+    position: relative;
+    margin: auto;
+    top: 10%;
+    width: 1400px;
+    height: 800px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.zakaz_blue_window{
+    width: 1400px;
+    height: 210px;
+    background-color: #135ec5;
+    text-align: center;
+}
+
+.zakaz_blue_window h1{
+    font-size: 48px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.zakaz_window p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 10px;
+}
+
+.money_text{
+    color: chartreuse;
+}
+
+.formstyle{
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.formstyle input{
+    margin-bottom: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 250px;
+}
+
+.formstyle .last_inp{
+    width: 10px;
+    margin-left: 40px;
+    margin-right: 5px;
+}
+
+.formstyle p{
+    font-size: 14px;
+    font-weight: normal;
+    color: #000;
+}
+.formstyle .buttonstyle{
+    background-color: #135ec5;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buttonstyle_sec{
+    background-color: #135ec5;
+    color: #fff;
+    cursor: pointer; 
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 150px;
+    height: 30px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.finish_content_cloc{
+    width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+}
+
+.finish_blue{
+    width: 100%;
+    height: 100px;
+    background-color: #135ec5;
+    text-align: center;
+}
+
+.finish_d{
+    font-family: 'Lexend Mega', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 60px;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.finish_content_cloc > p{
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.filter_buttons{
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}

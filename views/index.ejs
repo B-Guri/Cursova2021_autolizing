@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title><%=title %></title>
+</head>
+<body>
+    <header>
+        <div class="header_content">
+            <div class="header_logo">
+                <p class="logo">AUTOMONEY</p>
+            </div>
+            <div class="header_contacts">
+                <img src="../Sprites/Mail.png" alt="">
+                <a href="mailto:hursky73@gmail.com">hursky73@gmail.com</a>
+                <img src="../Sprites/Phone.png" alt="">
+                <a href="Tel:0509645409">+38 050 123 45 67</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_head">
+            <div class="main_head_content">
+                <div class="mers_logo">
+                    <img src="../Sprites/Mercedes.png" alt="">
+                </div>
+                <div class="main_head_go">
+                    <p>Лізинг авто це просто!</p>
+                    <!-- <div class="main_head_button">
+                        <p>Перейти до каталогу</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="main_propose">
+            <div class="propose_head">
+                <h1>Наші пропозиції</h1>
+            </div>
+            <div class="blue_line"></div>
+            <div class="filter_buttons">
+                <a href="/index/AZ">
+                    <div class="main_head_button">
+                        <p>Марка</p>
+                    </div>
+                </a>
+
+                <a href="/index/year">
+                    <div class="main_head_button">
+                        <p>Рік випуску</p>
+                    </div>
+                </a>
+
+                <a href="/index/probig">
+                    <div class="main_head_button">
+                        <p>Пробіг</p>
+                    </div>
+                 </a>
+            </div>
+            <div class="main_catalog">
+                <% res.forEach(function(res){%>
+                <a href="/page/<%=res.IDAutomobile%>">
+                    <div class="propose">
+                        <div class="propose_main_header">
+                            <div class="propose_car">
+                                <img src="../Sprites/<%=res.MarkaName%>.png" width="280px" alt="">
+                            </div>
+                        </div>
+                        <div class="propose_info">
+                            <p class="propose_text"><%=res.MarkaName%> <%=res.NameModel%></p>
+                            <p class="propose_second_text"><%=res.YearVupysky%> - <%=res.Probig%>км - <%=res.Tippaluva%> - <%=res.TipKuzova%></p>
+                        </div>
+                    </div>
+                </a>
+                <%});%>
+
+            </div>
+            <div class="main_about">
+                <div class="main_about_zagolovok">
+                    <h2>Як отримати авто за 1 день?</h2>
+                </div>
+                <div class="des_block">
+                    <div class="des_current">
+                        <div class="des_num">
+                            <p class="number_des">1</p>
+                        </div>
+                        <div class="des_txt">
+                            <h3>Заявка</h3>
+                            <p>Оформіть заявку на лізинг і отримаєте консультацію за 30 хв</p>
+                        </div>
+                    </div>
+                    <div class="des_current">
+                        <div class="des_num">
+                            <p class="number_des">2</p>
+                        </div>
+                        <div class="des_txt">
+                            <h3>Прийняття рішення</h3>
+                            <p>Наші фахівці верифікують вас і приймають оптимальне рішення</p>
+                        </div>
+                    </div>
+                    <div class="des_current">
+                        <div class="des_num">
+                            <p class="number_des">3</p>
+                        </div>
+                        <div class="des_txt">
+                            <h3>Підбір автомобiля</h3>
+                            <p>Ви пiдбираєте автомобiль самостiйно, або з допомогою менеджера</p>
+                        </div>
+                    </div>
+                    <div class="des_current">
+                        <div class="des_num">
+                            <p class="number_des">4</p>
+                        </div>
+                        <div class="des_txt">
+                            <h3>Укладення договору</h3>
+                            <p>Пiдготовка i пiдписання договору протягом декiлькох годин</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="propose_head">
+                <h1>Питання та відповіді</h1>
+            </div>
+            <div class="blue_line"></div>
+            <div class="que_main">
+                <h4>Що таку лізинг?</h4>
+                <p>Фінансовий лізинг - доступний і простий спосіб придбання авто, аналог банківського автокредитування. Різниця полягає в юридичному оформленні - авто реєструється на Лізингову компанію на період дії Договору лізингу (періоду фінансування клієнта), а по закінченню терміну Договору лізингу, клієнт зобов'язаний прийняти авто у власність. Ми не передаємо авто в заставу будь-якого Банку, що дозволяє викупити свій авто достроково в будь-який момент після 12 місяців.</p>
+                <h4>Чим лізинг відрізняється від кредиту?</h4>
+                <p>Клієнт платить тільки аванс і одноразову комісію. Всі інші початкові витрати (реєстрація, державні податки і збори, страхування) розподілені рівномірно на весь термін лізингу. Лізинг оформляється за схемою «єдиного вікна»: клієнт підписує тільки договір лізингу, реєстрацією і страхуванням займається AUTOMONEY.</p>
+                <h4>Можливе дострокове погашення лізингу?</h4>
+                <p>Повне дострокове погашення можливо через 12 місяців після оформлення договору фінансового лізингу. Дана норма регулюється Законом України «Про фінансовий лізинг».</p>
+                <h4>Чи буде можливість у мене виїзду за кордон?</h4>
+                <p>AUTOMONEY надає право на виїзд за кордон з максимальним терміном дії до 6 місяців (термін може продовжити). При перетині кордону при собі необхідно мати: лист-дозвіл на виїзд, техпаспорт, копію договору фінансового лізингу.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot_main">
+            <div class="foot_content">
+                <p class="logo_foot">AUTOMONEY</p>
+                <a href="mailto:hursky73@gmail.com" class="mail_foot">hursky73@gmail.com</a>
+                <a href="Tel:0509645409" class="tell_foot">+38 050 123 45 67</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
